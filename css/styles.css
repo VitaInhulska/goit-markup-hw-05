@@ -442,6 +442,15 @@ button {
 .footer-svg {
     fill: #F4F4FD;
 }
+
+.text-subs {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
 .form-footer {
     display: flex;
     flex-direction: column;
@@ -475,11 +484,7 @@ button {
     background-color: #404bbf;
 }
 .footer-form-label {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
+    
 }
 .footer-email-field {
     border: 1px solid #fff;
