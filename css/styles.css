@@ -443,6 +443,8 @@ button {
     fill: #F4F4FD;
 }
 
+
+
 .text-subs {
     font-weight: 500;
     font-size: 16px;
@@ -453,13 +455,29 @@ button {
 }
 .form-footer {
     display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.field-btn {
-    display: flex;
     gap: 24px;
 }
+.footer-email-field {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    
+}
+.footer-email-field::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+}
+
 .footer-btn {
     cursor: pointer;
     display: flex;
@@ -483,25 +501,9 @@ button {
 .footer-btn:focus {
     background-color: #404bbf;
 }
-.footer-form-label {
-    
-}
-.footer-email-field {
-    border: 1px solid #fff;
-    border-radius: 4px;
-    height: 40px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: transparent;
-    padding: 8px 16px;
-    color: #fff;
-}
-.footer-email-field::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 2;
-    letter-spacing: 0.04em;
-    color: #fff;
-}
+
+
+
 .icon-footer-plane {
     fill: #fff;
 }
