@@ -458,7 +458,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div>
+        <div class="footer-social-div">
           <p class="footer-text-social">Social media</p>
           <ul class="social-links-footer">
             <li class="link-social-icon">
@@ -491,8 +491,85 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-form">
+          <form
+            class="form-footer"
+            name="footer-subscribe"
+            autocomplete="off"
+            novalidate
+          >
+            <label
+              class="footer-form-label"
+              for="footer-field-sub"
+              name="footer-email"
+              >Subscribe</label
+            >
+            <div class="field-btn">
+              <input
+                class="footer-email-field"
+                id="footer-field-sub"
+                type="email"
+                name="footer-field"
+                placeholder="E-mail"
+              />
+              <button class="footer-btn" type="submit">
+                Subscribe
+                <svg class="icon-footer-plane" width="24" height="24">
+                  <use href="./images/icons.svg#icon-plane"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- #endregion Footer -->
+
+    <!-- #region Modal -->
+    <div class="modal-bg is-open">
+      <div class="modal">
+        <button class="close-btn" type="button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-crest"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form
+          class="main-form"
+          name="registration"
+          autocomplete="off"
+          novalidate
+        >
+          <svg class="user-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+          <label class="form-label"
+            >Name<input class="input-form" type="text" name="user"
+          /></label>
+          <label class="form-label"
+            >Phone<input class="input-form" type="tel" name="phone"
+          /></label>
+          <label class="form-label"
+            >Email<input class="input-form" type="email" name="email"
+          /></label>
+          <label class="form-label form-comment"
+            >Comment<textarea
+              class="input-form"
+              type="text"
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <label class="form-label check"
+            ><input type="checkbox" name="checkbox" /> I accept the terms and
+            conditions of the <span>Privacy Policy</span></label
+          >
+          <button class="reg-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- #endregion Modal -->
   </body>
 </html>
