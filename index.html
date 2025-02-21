@@ -535,31 +535,75 @@
           autocomplete="off"
           novalidate
         >
-          <svg class="user-icon" width="18" height="18">
-            <use href="./images/icons.svg#icon-person"></use>
-          </svg>
-          <label class="form-label"
-            >Name<input class="input-form" type="text" name="user"
-          /></label>
-          <label class="form-label"
-            >Phone<input class="input-form" type="tel" name="phone"
-          /></label>
-          <label class="form-label"
-            >Email<input class="input-form" type="email" name="email"
-          /></label>
-          <label class="form-label form-comment"
-            >Comment
+          <div class="form-option">
+            <label class="form-label" for="user-name">Name</label>
+            <div class="field-icon">
+              <input
+                class="input-form"
+                type="text"
+                name="user"
+                id="user-name"
+              />
+              <svg class="user-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-option">
+            <label class="form-label" for="user-tel">Phone</label>
+            <div class="field-icon">
+              <input class="input-form" type="text" name="user" id="user-tel" />
+              <svg class="user-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-option">
+            <label class="form-label" for="user-email">Email</label>
+            <div class="field-icon">
+              <input
+                class="input-form"
+                type="text"
+                name="user"
+                id="user-email"
+              />
+              <svg class="user-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="comment-field">
+            <label class="form-label" for="user-comment">Comment</label>
             <textarea
-              class="input-form"
-              name="comment"
-              rows="5"
+              class="comment-text"
+              name="user-comment"
               placeholder="Text input"
+              id="user-comment"
             ></textarea>
-          </label>
-          <label class="form-label check"
-            ><input type="checkbox" name="checkbox" /> I accept the terms and
-            conditions of the <span>Privacy Policy</span></label
-          >
+          </div>
+
+          <div class="check-section">
+            <input
+              class="check-mark visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="check-label" for="user-privacy">
+              <span class="accept"
+                ><svg class="icon-accept" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg></span
+              >I accept the terms and conditions of the
+              <a href="" class="link-privacy" target="_blank"
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+
           <button class="reg-btn" type="submit">Send</button>
         </form>
       </div>
